@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript pour le web</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="my-anchor"></div>
+
+    <div class="content">Contenu 1</div>
+    <div class="content">Contenu 2</div>
+    <div class="content">Contenu 3</div>
+
+    <article>Contenu 1</article>
+    <article>Contenu 2</article>
+    <article>Contenu 3</article>
+
+    <div id="myId">
+        <p>
+            <span><a href="#">Lien 1</a></span>
+            <a href="#">Lien 2</a>
+            <span><a href="#">Lien 3</a></span>
+        </p>
+        <p class="article">
+            <span><a href="#">Lien 4</a></span>
+            <span><a href="#">Lien 5</a></span>
+            <a href="#">Lien 6</a>
+        </p>
+        <p>
+            <a href="#">Lien 7</a>
+            <span><a href="#">Lien 8</a></span>
+            <span><a href="#">Lien 9</a></span>
+        </p>
+    </div>
+    <div id="parent2">
+        <div id="previous">Précédent</div>
+        <div id="main">
+            <p>Paragraphe 1</p>
+            <p>Paragraphe 2</p>
+        </div>
+        <div id="next">Suivant</div>
+    </div>
+    <button id="event"></button>
+    <article id="parent">
+        <a class="link" id="child" href="#">Cliquez ici</a>
+        <p>Battle d'événement !</p>
+        Parent : <span id="parent-count">0</span>
+        Enfant : <span id="child-count">0</span>
+      </article>
+      <label>Choose an ice cream flavor :
+        <select name="ice-cream" id="ice-cream">
+            <option value="">Select one...</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="vanilla">Vanilla</option>
+        </select>
+      </label>
+      <form>
+        <div><input type="text" id="name" placeholder="Nom" /></div>
+        <div>
+          <select id="gender">
+            <option>Choisissez une valeur</option>
+            <option value="male">Homme</option>
+            <option value="female">Femme</option>
+            <option value="other">Autre</option>
+          </select>  
+        </div>
+      </form>
+      
+      <div id="result">
+        Nom : <span id="res-name"></span><br />
+        Genre : <span id="res-gender"></span><br />
+        Souris : (<span id="mouse-x"></span>, <span id="mouse-y"></span>)
+      </div>
+</body>
+</html>

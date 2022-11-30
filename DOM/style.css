@@ -1,0 +1,34 @@
+body {
+    color: #fff;
+    background-color: #000;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#event {
+    width: 25%;
+    height: 5vh;
+}
+
+#parent {
+    align-items: center;
+    background: #fff;
+    color: #000;
+    width: 50%;
+    margin: 5vh;
+}
+
+form, #result {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+  span {
+    margin: 10px;
+  }
