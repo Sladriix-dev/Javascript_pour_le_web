@@ -75,8 +75,8 @@ document.getElementById("code").addEventListener("input", function(e) {
 /******* EXO *******/
 
 function send(e) {
-    e.preventDefault();
-    fetch("https://mockbin.com/request", {
+    e.preventDefault(); // Evite que la page se recharge
+    fetch("https://mockbin.com/request", { // Promise
         method: "POST",
         headers: {
             'Accept': 'application/json',
@@ -86,10 +86,10 @@ function send(e) {
     })
     .then(function(res) {
         if (res.ok) {
-            return res.json();
+            return res.json(); // Promise
         }
     })
-    .then(function(value) {
+    .then(function(value) { // Vrai valeur
         document.getElementById("result2").innerText = value.postData.text;
     })
     .catch(function(err) {
