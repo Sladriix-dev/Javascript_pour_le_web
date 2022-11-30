@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>API</title>
+    <script type="text/javascript" src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form>
+        <div><input type="text" id="name" placeholder="Nom" /></div>
+        <div>
+            <select id="gender">
+                <option>Choisissez une valeur</option>
+                <option value="male">Homme</option>
+                <option value="female">Femme</option>
+                <option value="other">Autre</option>
+            </select>
+        </div>
+    </form>
+
+    <div id="result">
+        Nom : <span id="res-name"></span><br />
+        Genre : <span id="res-gender"></span><br />
+        Souris : (<span id="mouse-x"></span>, <span id="mouse-y"></span>)
+    </div>
+    <div>
+        <button id="ask-hello">Bien le bonjour</button>
+    </div>
+    <div id="hello-result"></div>
+    <input type="text" pattern="[0-9]{,3}" /> <!--Pattern ici permet d'obliger le user a rentrer uniquement des chiffres et limité à 3-->
+
+    <form id="form-to-check">
+        <p>
+          <label>Code : <input type="text" name="code" id="code" /></label><br />
+          <div class="result" id="code-validation"></div>
+        </p>
+        <p>
+          <label>Email : <input type="email" name="email" required /></label>
+        </p>
+        <p>
+           <input type="submit" value="Vérifier" id="submit-btn" />
+        </p>
+      </form>
+      <form id="form">
+        <label>Saisissez une valeur <input type="text" id="value" /></label><br />
+        <input type="submit" value="Envoyer" />
+      </form>
+      <div id="result2"></div>
+</body>
+
+</html>
